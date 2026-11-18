@@ -113,7 +113,7 @@ const CONFIG = {
   supabaseKey: "sb_publishable_sDvlDLkb1IvwTquXZMV9Sw_pFq9x6NY",
   signupDeadline: "2027-01-31T23:59:00-06:00",
   deadlineLabel: "Jan 31",
-  eventLabel: "April 2027",
+  eventLabel: "April 24, 2027",
   place: "Myrtle Beach"
 };
 const LIVE = !!(CONFIG.supabaseUrl && CONFIG.supabaseKey);
@@ -212,7 +212,7 @@ function renderSignup(sent){
     <p>This year the house band is backing <em>you</em>. Pick a song, and once the band approves it we'll learn it before ${CONFIG.place}. If it's not one we can pull off, we'll text you to pick another. On karaoke night, listen for your name.</p>
     <div class="facts">
       <div class="fact"><b>${CONFIG.deadlineLabel}</b><span>Sign-ups close</span></div>
-      <div class="fact"><b>${CONFIG.eventLabel.split(" ")[0]}</b><span>Show night</span></div>
+      <div class="fact"><b>Apr 24</b><span>Show night</span></div>
       <div class="fact"><b>Live</b><span>3-piece band</span></div>
     </div>
   </section>
