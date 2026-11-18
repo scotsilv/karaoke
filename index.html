@@ -222,9 +222,10 @@ function renderSignup(sent){
   ${sent ? `
   <section class="card done" aria-live="polite">
     <div class="big" aria-hidden="true">🎤</div>
-    <h2>You're on the list!</h2>
+    <h2>Thanks for your request!</h2>
     <p><b>${esc(sent.song)}</b> by ${esc(sent.artist)}<br>Sung by ${esc(sent.singer)}</p>
-    <p class="foot">The band will review it and text you if you need to pick another song. Want to add another song or sign up a friend?</p>
+    <p>The band will consider your song and either approve or decline it. If it's declined, you'll get a text asking you to pick another song.</p>
+    <p class="foot">Want to add another song or sign up a friend?</p>
     <button class="btn-ghost" id="again">Sign up another song</button>
   </section>` : isClosed ? `
   <section class="card done"><h2>Sign-ups are closed</h2><p>The band is busy rehearsing. See you in ${CONFIG.place}!</p></section>` : `
